@@ -16,15 +16,6 @@ public class Student implements Serializable {
         this.matricule = matricule;
     }
 
-    public Student(long matricule, String nom, String niveau) {
-        this.matricule = matricule;
-        this.nom = nom;
-        this.niveau = niveau;
-    }
-
-    public Student() {
-    }
-
     public String getNom() {
         return nom;
     }
@@ -39,5 +30,14 @@ public class Student implements Serializable {
 
     public void setNiveau(String niveau) {
         this.niveau = niveau;
+    }
+
+    public Student(long matricule, String nom, String niveau) {
+        this.matricule = matricule;
+        this.nom = nom;
+        this.niveau = niveau;
+    }
+
+    public Student() {
     }
 }
